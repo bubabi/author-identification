@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f603f9-34c7-433c-8ccd-a7fcccd336c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/author-detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/author-detection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/code.py" afterDir="false" />
     </list>
@@ -13,57 +12,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552261604232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552429217835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="author-detection" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="143" column="42" selection-start-line="143" selection-start-column="42" selection-end-line="143" selection-end-column="42" />
+            <state relative-caret-position="294">
+              <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#65#200#0" />
-                <element signature="e#213#259#0" />
-                <element signature="e#268#362#0" />
-                <element signature="e#403#1105#0" />
-                <element signature="e#1147#1577#0" />
-                <element signature="e#1771#2032#0" />
-                <element signature="e#2079#2325#0" />
-                <element signature="e#2372#2618#0" />
-                <element signature="e#2868#3615#0" />
-                <element signature="e#2913#3267#0" />
-                <element signature="e#3110#3267#0" />
-                <element signature="e#3817#4693#0" />
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#408#1061#0" />
+                <element signature="e#1256#1928#0" />
+                <element signature="e#3392#3396#0" />
+                <element signature="e#3387#4120#0" />
+                <element signature="e#4227#5147#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/6.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/11.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/13.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/22.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/26.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -77,8 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>To</find>
-      <find>['To</find>
       <find>``</find>
       <find>to you</find>
       <find>that the</find>
@@ -107,6 +75,8 @@
       <find>aspasia</find>
       <find>safety</find>
       <find>'safety</find>
+      <find>'&lt;s&gt; &lt;s&gt; and'</find>
+      <find>adheren</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -182,6 +152,9 @@
       <module name="author-detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -218,20 +191,21 @@
       <workItem from="1552253325131" duration="133000" />
       <workItem from="1552253568975" duration="435000" />
       <workItem from="1552254025520" duration="176000" />
-      <workItem from="1552254212954" duration="7225000" />
+      <workItem from="1552254212954" duration="7667000" />
+      <workItem from="1552307351954" duration="14667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36918000" />
+    <option name="totallyTimeSpent" value="52027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18025751" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50206614" side_tool="true" weight="0.18025751" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
@@ -245,7 +219,7 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.27831325" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Run" order="13" weight="0.41686746" />
+      <window_info active="true" anchor="bottom" id="Run" order="13" visible="true" weight="0.41686746" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -288,12 +262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/6.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/11.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/13.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -303,24 +271,58 @@
     <entry file="file://$PROJECT_DIR$/data/26.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/11.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/15.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/77.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/85.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/42.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/55.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/60.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/63.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="143" column="42" selection-start-line="143" selection-start-column="42" selection-end-line="143" selection-end-column="42" />
+        <state relative-caret-position="294">
+          <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#65#200#0" />
-            <element signature="e#213#259#0" />
-            <element signature="e#268#362#0" />
-            <element signature="e#403#1105#0" />
-            <element signature="e#1147#1577#0" />
-            <element signature="e#1771#2032#0" />
-            <element signature="e#2079#2325#0" />
-            <element signature="e#2372#2618#0" />
-            <element signature="e#2868#3615#0" />
-            <element signature="e#2913#3267#0" />
-            <element signature="e#3110#3267#0" />
-            <element signature="e#3817#4693#0" />
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#408#1061#0" />
+            <element signature="e#1256#1928#0" />
+            <element signature="e#3392#3396#0" />
+            <element signature="e#3387#4120#0" />
+            <element signature="e#4227#5147#0" />
           </folding>
         </state>
       </provider>
