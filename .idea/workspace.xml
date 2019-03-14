@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f603f9-34c7-433c-8ccd-a7fcccd336c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/code.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552601303066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552603916572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="author-detection" />
@@ -22,10 +21,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+            <state relative-caret-position="330">
+              <caret line="300" column="17" lean-forward="true" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
               <folding>
                 <element signature="e#265#359#0" />
+                <element signature="e#1281#1948#0" />
+                <element signature="e#2018#3299#0" />
                 <element signature="e#2116#2411#0" />
                 <element signature="e#2279#2411#0" />
                 <element signature="e#3441#4082#0" />
@@ -43,8 +44,12 @@
                 <element signature="e#5296#5358#0" />
                 <element signature="e#5473#5905#0" />
                 <element signature="e#5581#5691#0" />
+                <element signature="e#6178#7510#0" />
                 <element signature="e#6561#6848#0" />
                 <element signature="e#6892#7044#0" />
+                <element signature="e#6480#7184#0" />
+                <element signature="e#8276#8621#0" />
+                <element signature="e#8647#9353#0" />
               </folding>
             </state>
           </provider>
@@ -190,15 +195,16 @@
       <workItem from="1552254025520" duration="176000" />
       <workItem from="1552254212954" duration="7667000" />
       <workItem from="1552307351954" duration="16534000" />
-      <workItem from="1552559834839" duration="11747000" />
+      <workItem from="1552559834839" duration="14386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65641000" />
+    <option name="totallyTimeSpent" value="68280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="564" y="0" width="876" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
@@ -210,7 +216,7 @@
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -329,10 +335,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="330">
+          <caret line="300" column="17" lean-forward="true" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
           <folding>
             <element signature="e#265#359#0" />
+            <element signature="e#1281#1948#0" />
+            <element signature="e#2018#3299#0" />
             <element signature="e#2116#2411#0" />
             <element signature="e#2279#2411#0" />
             <element signature="e#3441#4082#0" />
@@ -350,8 +358,12 @@
             <element signature="e#5296#5358#0" />
             <element signature="e#5473#5905#0" />
             <element signature="e#5581#5691#0" />
+            <element signature="e#6178#7510#0" />
             <element signature="e#6561#6848#0" />
             <element signature="e#6892#7044#0" />
+            <element signature="e#6480#7184#0" />
+            <element signature="e#8276#8621#0" />
+            <element signature="e#8647#9353#0" />
           </folding>
         </state>
       </provider>
