@@ -207,10 +207,29 @@ def generate_trigram_sentence(word, ngram, probs, n=30):
     #print(sentence_prob)
     return generated_sentence
 
+
+def task1_and_task2_handler(author):
+
+    data['train'][author] = read_and_tokenize("./data", train_nums[author])
+    unigram, bigram, trigram = build_ngram_model(data['train'][author])
+
+    sentence_count = 0
+    for essay in data['train'][author]: sentence_count += len(essay)
+
+    unigram_probs, bigram_probs, trigram_probs = get_ngram_probs(sentence_count, unigram, bigram, trigram)
+
+
+    # print("UNIGRAM: \n", generate_unigram_sentence('', unigram, unigram_probs))
+    # print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram, bigram_probs))
+    # print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram, trigram_probs))
+
+    return unigram, bigram, trigram, sentence_count, bigram_probs, trigram_probs
+
+
 ################################ TASK 3 ##################################
 
 
-def get_essay_perplexity(n, author, count, unigram, bigram, trigram, essays):
+def get_essay_perplexity(n, count, unigram, bigram, trigram, essays):
 
     if n == 3: V = len( trigram.keys() )
     else: V = len( bigram.keys() )
@@ -249,24 +268,6 @@ def get_essay_perplexity(n, author, count, unigram, bigram, trigram, essays):
     return perps
 
 
-def task1_and_task2_handler(author):
-
-    data['train'][author] = read_and_tokenize("./data", train_nums[author])
-    unigram, bigram, trigram = build_ngram_model(data['train'][author])
-
-    sentence_count = 0
-    for essay in data['train'][author]: sentence_count += len(essay)
-
-    unigram_probs, bigram_probs, trigram_probs = get_ngram_probs(sentence_count, unigram, bigram, trigram)
-
-
-    # print("UNIGRAM: \n", generate_unigram_sentence('', unigram, unigram_probs))
-    # print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram, bigram_probs))
-    # print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram, trigram_probs))
-
-    return unigram, bigram, trigram, sentence_count, bigram_probs, trigram_probs
-
-
 def test():
     for author in ['h', 'm']:
 
@@ -275,7 +276,7 @@ def test():
 
         test_essays = read_and_tokenize("./data", test_nums[author])
         for i in range(2, 4):
-            get_essay_perplexity( i, author, count, unigram, bigram, trigram, test_essays )
+            get_essay_perplexity( i, count, unigram, bigram, trigram, test_essays )
         print()
 
 
@@ -291,11 +292,12 @@ def classify_essays():
                 bigram_prob, trigram_prob = task1_and_task2_handler(author)
 
                 unknown_essays = read_and_tokenize("./data", [num])
-                perps = get_essay_perplexity( i, author, count, unigram, bigram, trigram, unknown_essays )
+                perps = get_essay_perplexity( i, count, unigram, bigram, trigram, unknown_essays )
                 if author == 'h': h_perp = perps[0]
                 else: m_perp = perps[0]
             print("h:", h_perp, "m", m_perp)
             if h_perp <= m_perp: print(num, "HAMILTON")
             else: print(num, "MADISON")
+
 
 classify_essays()
