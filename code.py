@@ -19,6 +19,8 @@ data = {
              'm': []}
 }
 
+unknown_nums = [49, 50, 51, 52, 53, 54, 55, 56, 57, 62, 63]
+
 
 def read_and_tokenize(path, num_list):
 
@@ -32,9 +34,9 @@ def read_and_tokenize(path, num_list):
                 f.readline()
 
                 text_block = f.readline().split( ": ", 1 )[1].lower() \
-                    .replace( ",", " <comma> " ).replace( "(", "" ).replace( ")", "" ) \
+                    .replace( ",", "" ).replace( "(", "" ).replace( ")", "" ) \
                     .replace( "``", "" ).replace( ";", "" ).replace( "\n", "" ).replace( ":", "" ) \
-                    .replace( ".", " <dot> . " ).replace( "?", " <q> ? " ).replace( "!", " <ex> ! " ).replace( "''", "" )
+                    .replace( ".", " <dot> . " ).replace( "?", " <q> " ).replace( "!", " <ex> " ).replace( "''", "" )
 
                 sentences = re.split( r"(?<!^)\s*[.\n]+\s*(?!$)", text_block )
                 essay = sentences[:-1]
@@ -88,7 +90,7 @@ def get_ngram_probs(sentence_count, unigram, bigram, trigram):
             V = len( bigram.keys() )
             for k, v in target_items:
                 numerator = v + 1
-                denominator = unigram[k.split()[0]] + V
+                denominator = unigram.get(k.split()[0], 0) + V
                 prob = numerator / denominator
                 probs[k] = prob
         else:
@@ -100,7 +102,7 @@ def get_ngram_probs(sentence_count, unigram, bigram, trigram):
                 if bigram_key == "<s> <s>":
                     denominator = sentence_count
                 else:
-                    denominator = bigram[bigram_key] + V
+                    denominator = bigram.get(bigram_key, 0) + V
                 prob = numerator / denominator
                 probs[k] = prob
 
@@ -205,31 +207,78 @@ def generate_trigram_sentence(word, ngram, probs, n=30):
     #print(sentence_prob)
     return generated_sentence
 
+################################ TASK 3 ##################################
 
-#################### H ####################
 
-data['train']['h'] = read_and_tokenize("./data", train_nums['h'])
-unigram_h, bigram_h, trigram_h = build_ngram_model(data['train']['h'])
+def get_essay_prob(n, count, unigram, bigram, trigram, essays):
 
-h_sentence_count = 0
-for essay in data['train']['h']: h_sentence_count += len(essay)
+    if n == 3: V = len( trigram.keys() )
+    else: V = len( bigram.keys() )
 
-unigram_h_probs, bigram_h_probs, trigram_h_probs = get_ngram_probs(h_sentence_count, unigram_h, bigram_h, trigram_h)
+    for essay in essays:
+        pair_count = 0
+        essay_perplexity = 0
+        essay_prob = 0
+        for sentence in essay:
+            sentence = sentence.split()
+            if (len( sentence ) - n + 1 ) == 0: continue
+            sentence_prob = 0
+            for i in range( len( sentence ) - n + 1 ):
+                pair_count += 1
+                gram = ' '.join(sentence[i:i + n])
+                if n == 3:
+                    key = gram.split()[0] + " " + gram.split()[1]
+                    numerator = trigram.get( gram, 0 ) + 1
+                    if key == "<s> <s>":
+                        denominator = count
+                    else:
+                        denominator = bigram.get( key, 0 ) + V
+                else:
+                    key = gram.split()[0]
+                    numerator = bigram.get( gram, 0 ) + 1
+                    denominator = unigram.get( key, 0 ) + V
+                prob = numerator / denominator
+                sentence_prob += math.log2(prob)
 
-print("UNIGRAM: \n", generate_unigram_sentence('', unigram_h, unigram_h_probs))
-print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram_h, bigram_h_probs))
-print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram_h, trigram_h_probs))
+            essay_prob += sentence_prob
+            essay_perplexity = math.pow(2, essay_prob*(-1/pair_count))
 
-#################### M ####################
+        print("Prob:", essay_prob, "Perplexity:", essay_perplexity)
 
-data['train']['m'] = read_and_tokenize("./data", train_nums['m'])
-unigram_m, bigram_m, trigram_m = build_ngram_model(data['train']['m'])
 
-m_sentence_count = 0
-for essay in data['train']['m']: m_sentence_count += len(essay)
 
-unigram_m_probs, bigram_m_probs, trigram_m_probs = get_ngram_probs(m_sentence_count, unigram_m, bigram_m, trigram_m)
 
-print("\nUNIGRAM: \n", generate_unigram_sentence('', unigram_h, unigram_h_probs))
-print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram_h, bigram_h_probs))
-print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram_h, trigram_h_probs))
+
+
+
+
+
+
+def task1_and_task2_handler(author):
+
+    data['train'][author] = read_and_tokenize("./data", train_nums[author])
+    unigram, bigram, trigram = build_ngram_model(data['train'][author])
+
+    sentence_count = 0
+    for essay in data['train'][author]: sentence_count += len(essay)
+
+    unigram_probs, bigram_probs, trigram_probs = get_ngram_probs(sentence_count, unigram, bigram, trigram)
+
+
+    # print("UNIGRAM: \n", generate_unigram_sentence('', unigram, unigram_probs))
+    # print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram, bigram_probs))
+    # print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram, trigram_probs))
+
+    return unigram, bigram, trigram, sentence_count, bigram_probs, trigram_probs
+
+
+h_unigram, h_bigram, h_trigram, h_count,\
+    h_bigram_prob, h_trigram_prob = task1_and_task2_handler('h')
+
+m_unigram, m_bigram, m_trigram, m_count,\
+    m_bigram_prob, m_trigram_prob = task1_and_task2_handler('m')
+
+test_essays = read_and_tokenize("./data", test_nums['h'])
+
+get_essay_prob(3, h_count, h_unigram, h_bigram, h_trigram, test_essays)
+#get_essay_prob(3, m_count, m_unigram, m_bigram, m_trigram, test_essays)

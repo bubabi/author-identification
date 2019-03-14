@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552429217835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552601303066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="author-detection" />
@@ -22,15 +22,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
+            <state relative-caret-position="335">
+              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#408#1061#0" />
-                <element signature="e#1256#1928#0" />
-                <element signature="e#3392#3396#0" />
-                <element signature="e#3387#4120#0" />
-                <element signature="e#4227#5147#0" />
+                <element signature="e#265#359#0" />
+                <element signature="e#2116#2411#0" />
+                <element signature="e#2279#2411#0" />
+                <element signature="e#3441#4082#0" />
+                <element signature="e#3484#3785#0" />
+                <element signature="e#3620#3785#0" />
+                <element signature="e#3696#3753#0" />
+                <element signature="e#3895#4025#0" />
+                <element signature="e#4194#5014#0" />
+                <element signature="e#4332#4506#0" />
+                <element signature="e#4411#4474#0" />
+                <element signature="e#4686#4750#0" />
+                <element signature="e#5031#5962#0" />
+                <element signature="e#5076#5390#0" />
+                <element signature="e#5217#5390#0" />
+                <element signature="e#5296#5358#0" />
+                <element signature="e#5473#5905#0" />
+                <element signature="e#5581#5691#0" />
+                <element signature="e#6561#6848#0" />
+                <element signature="e#6892#7044#0" />
               </folding>
             </state>
           </provider>
@@ -47,13 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>``</find>
-      <find>to you</find>
-      <find>that the</find>
-      <find>'that the'</find>
-      <find>of the different grounds</find>
-      <find>46</find>
-      <find>no bills of</find>
       <find>'of the union'</find>
       <find>laws</find>
       <find>supine</find>
@@ -77,6 +84,13 @@
       <find>'safety</find>
       <find>'&lt;s&gt; &lt;s&gt; and'</find>
       <find>adheren</find>
+      <find>&lt;q&gt;</find>
+      <find>effects of uni</find>
+      <find>the effects of</find>
+      <find>&lt;s&gt; &lt;s&gt;</find>
+      <find>print</find>
+      <find>more subtle</find>
+      <find>faction and</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -92,33 +106,16 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="726" />
+    <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="author-detection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="author-detection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="author-detection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="author-detection" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -192,19 +189,19 @@
       <workItem from="1552253568975" duration="435000" />
       <workItem from="1552254025520" duration="176000" />
       <workItem from="1552254212954" duration="7667000" />
-      <workItem from="1552307351954" duration="14667000" />
+      <workItem from="1552307351954" duration="16534000" />
+      <workItem from="1552559834839" duration="11747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52027000" />
+    <option name="totallyTimeSpent" value="65641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="564" y="0" width="876" height="900" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" weight="0.18025751" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
       <window_info id="Favorites" order="2" sideWeight="0.50206614" side_tool="true" weight="0.18025751" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -294,9 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/77.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/85.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -309,20 +303,55 @@
     <entry file="file://$PROJECT_DIR$/data/60.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/86.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/81.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/83.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/77.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/67.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/64.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/63.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/52.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
+        <state relative-caret-position="335">
+          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#408#1061#0" />
-            <element signature="e#1256#1928#0" />
-            <element signature="e#3392#3396#0" />
-            <element signature="e#3387#4120#0" />
-            <element signature="e#4227#5147#0" />
+            <element signature="e#265#359#0" />
+            <element signature="e#2116#2411#0" />
+            <element signature="e#2279#2411#0" />
+            <element signature="e#3441#4082#0" />
+            <element signature="e#3484#3785#0" />
+            <element signature="e#3620#3785#0" />
+            <element signature="e#3696#3753#0" />
+            <element signature="e#3895#4025#0" />
+            <element signature="e#4194#5014#0" />
+            <element signature="e#4332#4506#0" />
+            <element signature="e#4411#4474#0" />
+            <element signature="e#4686#4750#0" />
+            <element signature="e#5031#5962#0" />
+            <element signature="e#5076#5390#0" />
+            <element signature="e#5217#5390#0" />
+            <element signature="e#5296#5358#0" />
+            <element signature="e#5473#5905#0" />
+            <element signature="e#5581#5691#0" />
+            <element signature="e#6561#6848#0" />
+            <element signature="e#6892#7044#0" />
           </folding>
         </state>
       </provider>
