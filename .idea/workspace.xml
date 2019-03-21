@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f603f9-34c7-433c-8ccd-a7fcccd336c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/code.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +12,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1552604140478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$hackerrank.coverage" NAME="hackerrank Coverage Results" MODIFIED="1552919596400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1553184844684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="author-detection" />
@@ -21,35 +23,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="300" column="17" lean-forward="true" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
               <folding>
+                <element signature="e#61#196#0" />
+                <element signature="e#210#256#0" />
                 <element signature="e#265#359#0" />
-                <element signature="e#1281#1948#0" />
-                <element signature="e#2018#3299#0" />
-                <element signature="e#2116#2411#0" />
-                <element signature="e#2279#2411#0" />
-                <element signature="e#3441#4082#0" />
-                <element signature="e#3484#3785#0" />
-                <element signature="e#3620#3785#0" />
-                <element signature="e#3696#3753#0" />
-                <element signature="e#3895#4025#0" />
-                <element signature="e#4194#5014#0" />
-                <element signature="e#4332#4506#0" />
-                <element signature="e#4411#4474#0" />
-                <element signature="e#4686#4750#0" />
-                <element signature="e#5031#5962#0" />
-                <element signature="e#5076#5390#0" />
-                <element signature="e#5217#5390#0" />
-                <element signature="e#5296#5358#0" />
-                <element signature="e#5473#5905#0" />
-                <element signature="e#5581#5691#0" />
-                <element signature="e#6178#7510#0" />
-                <element signature="e#6561#6848#0" />
-                <element signature="e#6892#7044#0" />
-                <element signature="e#6480#7184#0" />
-                <element signature="e#8276#8621#0" />
-                <element signature="e#8647#9353#0" />
+                <element signature="e#280#312#0" />
+                <element signature="e#326#357#0" />
+                <element signature="e#467#1214#0" />
+                <element signature="e#1329#1996#0" />
+                <element signature="e#2066#3361#0" />
+                <element signature="e#2164#2459#0" />
+                <element signature="e#2327#2459#0" />
+                <element signature="e#2493#2773#0" />
+                <element signature="e#2614#2773#0" />
+                <element signature="e#2800#3261#0" />
+                <element signature="e#2923#3261#0" />
+                <element signature="e#3503#4200#0" />
+                <element signature="e#4264#5083#0" />
+                <element signature="e#5148#6078#0" />
+                <element signature="e#6123#6797#0" />
+                <element signature="e#6960#8304#0" />
+                <element signature="e#8376#9061#0" />
               </folding>
             </state>
           </provider>
@@ -66,8 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'of the union'</find>
-      <find>laws</find>
       <find>supine</find>
       <find>of the union</find>
       <find>of the Union</find>
@@ -93,9 +87,11 @@
       <find>effects of uni</find>
       <find>the effects of</find>
       <find>&lt;s&gt; &lt;s&gt;</find>
-      <find>print</find>
       <find>more subtle</find>
       <find>faction and</find>
+      <find>eksik</find>
+      <find>print</find>
+      <find>N-gram</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,23 +103,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/hackerrank" />
         <option value="$PROJECT_DIR$/code.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="726" />
-    <option name="width" value="714" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="105" />
+    <option name="y" value="29" />
+    <option name="width" value="1440" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="author-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-detection" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last.edited.regexp" value="Selamın aleyküm." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -149,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.code">
     <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="author-detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,9 +184,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="hackerrank" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="author-detection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hackerrank" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.code" />
+        <item itemvalue="Python.hackerrank" />
       </list>
     </recent_temporary>
   </component>
@@ -195,18 +230,28 @@
       <workItem from="1552254025520" duration="176000" />
       <workItem from="1552254212954" duration="7667000" />
       <workItem from="1552307351954" duration="16534000" />
-      <workItem from="1552559834839" duration="14386000" />
+      <workItem from="1552559834839" duration="15220000" />
+      <workItem from="1552900758971" duration="7926000" />
+      <workItem from="1553177107359" duration="2293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68280000" />
+    <option name="totallyTimeSpent" value="79333000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="564" y="0" width="876" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" weight="0.18025751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
       <window_info id="Favorites" order="2" sideWeight="0.50206614" side_tool="true" weight="0.18025751" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32891566" />
@@ -221,8 +266,8 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.27831325" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="13" visible="true" weight="0.41686746" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="13" weight="0.31325302" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -333,38 +378,42 @@
     <entry file="file://$PROJECT_DIR$/data/52.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="300" column="17" lean-forward="true" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
           <folding>
+            <element signature="e#61#196#0" />
+            <element signature="e#210#256#0" />
             <element signature="e#265#359#0" />
-            <element signature="e#1281#1948#0" />
-            <element signature="e#2018#3299#0" />
-            <element signature="e#2116#2411#0" />
-            <element signature="e#2279#2411#0" />
-            <element signature="e#3441#4082#0" />
-            <element signature="e#3484#3785#0" />
-            <element signature="e#3620#3785#0" />
-            <element signature="e#3696#3753#0" />
-            <element signature="e#3895#4025#0" />
-            <element signature="e#4194#5014#0" />
-            <element signature="e#4332#4506#0" />
-            <element signature="e#4411#4474#0" />
-            <element signature="e#4686#4750#0" />
-            <element signature="e#5031#5962#0" />
-            <element signature="e#5076#5390#0" />
-            <element signature="e#5217#5390#0" />
-            <element signature="e#5296#5358#0" />
-            <element signature="e#5473#5905#0" />
-            <element signature="e#5581#5691#0" />
-            <element signature="e#6178#7510#0" />
-            <element signature="e#6561#6848#0" />
-            <element signature="e#6892#7044#0" />
-            <element signature="e#6480#7184#0" />
-            <element signature="e#8276#8621#0" />
-            <element signature="e#8647#9353#0" />
+            <element signature="e#280#312#0" />
+            <element signature="e#326#357#0" />
+            <element signature="e#467#1214#0" />
+            <element signature="e#1329#1996#0" />
+            <element signature="e#2066#3361#0" />
+            <element signature="e#2164#2459#0" />
+            <element signature="e#2327#2459#0" />
+            <element signature="e#2493#2773#0" />
+            <element signature="e#2614#2773#0" />
+            <element signature="e#2800#3261#0" />
+            <element signature="e#2923#3261#0" />
+            <element signature="e#3503#4200#0" />
+            <element signature="e#4264#5083#0" />
+            <element signature="e#5148#6078#0" />
+            <element signature="e#6123#6797#0" />
+            <element signature="e#6960#8304#0" />
+            <element signature="e#8376#9061#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackerrank">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
