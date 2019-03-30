@@ -13,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/author_detection$hackerrank.coverage" NAME="hackerrank Coverage Results" MODIFIED="1552919596400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1553184844684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/author_detection$code.coverage" NAME="code Coverage Results" MODIFIED="1553945103140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="author-detection" />
@@ -23,30 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-              <folding>
-                <element signature="e#61#196#0" />
-                <element signature="e#210#256#0" />
-                <element signature="e#265#359#0" />
-                <element signature="e#280#312#0" />
-                <element signature="e#326#357#0" />
-                <element signature="e#467#1214#0" />
-                <element signature="e#1329#1996#0" />
-                <element signature="e#2066#3361#0" />
-                <element signature="e#2164#2459#0" />
-                <element signature="e#2327#2459#0" />
-                <element signature="e#2493#2773#0" />
-                <element signature="e#2614#2773#0" />
-                <element signature="e#2800#3261#0" />
-                <element signature="e#2923#3261#0" />
-                <element signature="e#3503#4200#0" />
-                <element signature="e#4264#5083#0" />
-                <element signature="e#5148#6078#0" />
-                <element signature="e#6123#6797#0" />
-                <element signature="e#6960#8304#0" />
-                <element signature="e#8376#9061#0" />
-              </folding>
+            <state relative-caret-position="-465">
+              <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -108,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="105" />
     <option name="y" value="29" />
     <option name="width" value="1440" />
@@ -126,6 +104,10 @@
             <path>
               <item name="author-detection" type="b2602c69:ProjectViewProjectNode" />
               <item name="author-detection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -148,6 +130,11 @@
         <option name="myModuleName" value="author-detection" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,12 +219,13 @@
       <workItem from="1552307351954" duration="16534000" />
       <workItem from="1552559834839" duration="15220000" />
       <workItem from="1552900758971" duration="7926000" />
-      <workItem from="1553177107359" duration="2293000" />
+      <workItem from="1553177107359" duration="2852000" />
+      <workItem from="1553944953262" duration="188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79333000" />
+    <option name="totallyTimeSpent" value="80080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,9 +237,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.18240343" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.18454936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
       <window_info id="Favorites" order="2" sideWeight="0.50206614" side_tool="true" weight="0.18025751" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32891566" />
@@ -381,39 +370,11 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackerrank" />
     <entry file="file://$PROJECT_DIR$/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-          <folding>
-            <element signature="e#61#196#0" />
-            <element signature="e#210#256#0" />
-            <element signature="e#265#359#0" />
-            <element signature="e#280#312#0" />
-            <element signature="e#326#357#0" />
-            <element signature="e#467#1214#0" />
-            <element signature="e#1329#1996#0" />
-            <element signature="e#2066#3361#0" />
-            <element signature="e#2164#2459#0" />
-            <element signature="e#2327#2459#0" />
-            <element signature="e#2493#2773#0" />
-            <element signature="e#2614#2773#0" />
-            <element signature="e#2800#3261#0" />
-            <element signature="e#2923#3261#0" />
-            <element signature="e#3503#4200#0" />
-            <element signature="e#4264#5083#0" />
-            <element signature="e#5148#6078#0" />
-            <element signature="e#6123#6797#0" />
-            <element signature="e#6960#8304#0" />
-            <element signature="e#8376#9061#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="-465">
+          <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
         </state>
       </provider>
     </entry>

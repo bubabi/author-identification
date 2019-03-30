@@ -109,27 +109,28 @@ def get_ngram_probs(sentence_count, unigram, bigram, trigram):
 
 ################################# TASK 2 #################################
 
+def weighted_random_choice(words, probs):
+
+    total = sum( probs[w] for w in words )
+    r = random.uniform( 0, total )
+    border = 0
+
+    for w in words:
+        word_prob = probs[w]
+        if border + word_prob > r:
+            if w not in ["<s>", "</s>", "<dot>"]:
+                return w, word_prob
+        border += word_prob
+
 
 def generate_unigram_sentence(word, ngram, probs, n=30):
-
-    def weighted_random_choice(words):
-        total = sum( probs[w] for w in words )
-        r = random.uniform( 0, total )
-        border = 0
-
-        for w in choices:
-            word_prob = probs[w]
-            if border + word_prob > r:
-                if w not in ["<s>", "</s>", "<dot>"]:
-                    return w, word_prob
-            border += word_prob
 
     generated_sentence = ""
     sentence_prob = 0
     choices = ngram.keys()
     for i in range(n):
         generated_sentence += word + " "
-        word, prob = weighted_random_choice(choices)
+        word, prob = weighted_random_choice(choices, probs)
 
         sentence_prob += math.log10( prob )
 
@@ -137,17 +138,6 @@ def generate_unigram_sentence(word, ngram, probs, n=30):
 
 
 def generate_bigram_sentence(word, ngram, probs, n=30):
-
-    def weighted_random_choice(choices):
-        total = sum( probs[w] for w in choices )
-        r = random.uniform( 0, total )
-        border = 0
-
-        for pair in choices:
-            pair_prob = probs[pair]
-            if border + pair_prob > r:
-                return pair, pair_prob
-            border += pair_prob
 
     generated_sentence = ""
     sentence_prob = 0
@@ -158,7 +148,7 @@ def generate_bigram_sentence(word, ngram, probs, n=30):
             if pair.split()[0] == word:
                 choices.append(pair)
         if not choices: break
-        word, prob = weighted_random_choice(choices)
+        word, prob = weighted_random_choice(choices, probs)
         word = word.split()[1]
 
         sentence_prob += math.log10( prob )
@@ -167,18 +157,6 @@ def generate_bigram_sentence(word, ngram, probs, n=30):
 
 
 def generate_trigram_sentence(word, ngram, probs, n=30):
-
-    def weighted_random_choice(choices):
-        total = sum( probs[w] for w in choices )
-        r = random.uniform( 0, total )
-        border = 0
-
-        for pair in choices:
-            pair_prob = probs[pair]
-            if border + pair_prob > r:
-                return pair, pair_prob
-            border += pair_prob
-
     generated_sentence = ""
     sentence_prob = 0
     for i in range(n):
@@ -189,7 +167,7 @@ def generate_trigram_sentence(word, ngram, probs, n=30):
             if key == word:
                 choices.append(pair)
         if not choices: break
-        tri_word, prob = weighted_random_choice(choices)
+        tri_word, prob = weighted_random_choice(choices, probs)
         tri_word = tri_word.split()
 
         sentence_prob += math.log10(prob)
@@ -210,9 +188,9 @@ def task1_and_task2_handler(author):
     unigram_probs, bigram_probs, trigram_probs = get_ngram_probs(sentence_count, unigram, bigram, trigram)
 
 
-    #print("UNIGRAM: \n", generate_unigram_sentence('', unigram, unigram_probs))
-    #print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram, bigram_probs))
-    #print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram, trigram_probs))
+    # print("UNIGRAM: \n", generate_unigram_sentence('', unigram, unigram_probs))
+    # print("BIGRAM: \n", generate_bigram_sentence('<s>', bigram, bigram_probs))
+    # print("TRIGRAM: \n", generate_trigram_sentence('<s> <s>', trigram, trigram_probs))
 
     return unigram, bigram, trigram, sentence_count, bigram_probs, trigram_probs
 
@@ -288,4 +266,4 @@ def test_and_classify_essays(nums):
 
 # test_and_classify_essays(unknown_nums)
 
-# test_and_classify_essays(test_nums['h'] + test_nums['m'])
+test_and_classify_essays(test_nums['h'] + test_nums['m'])
